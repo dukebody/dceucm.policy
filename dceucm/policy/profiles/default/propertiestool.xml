@@ -3,5 +3,6 @@
   <object name="site_properties" meta_type="Plone Property Sheet">
     <property name="default_language" type="string">es</property>
     <property name="icon_visibility" type="string">authenticated</property>
+    <property name="enable_inline_editing" type="boolean">False</property>
   </object>
 </object>
