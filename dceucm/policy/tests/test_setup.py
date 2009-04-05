@@ -10,6 +10,11 @@ class TestSetup(TestCase):
     def test_portal_language(self):
         self.assertEquals("es", 
             self.portal.portal_properties.site_properties.getProperty('default_language'))
+    def test_icons_authenticated(self):
+        """Test that content icons will be shown only to authenticated users
+        """
+        self.assertEquals("authenticated", 
+            self.portal.portal_properties.site_properties.getProperty('icon_visibility'))
 
 def test_suite():
     suite = unittest.TestSuite()
